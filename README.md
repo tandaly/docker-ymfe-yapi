@@ -3,6 +3,10 @@
 
 https://yapi.ymfe.org
 
+## docker镜像下载
+
+https://dev.aliyun.com/list.html?namePrefix=tandaly/yapi
+
 ## docker-compose.yml
 ```yml
 version: "2"

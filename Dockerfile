@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:8-alpine AS baseNodeImage
 
 ARG TAG=v1.3.17
 ARG REGISTRY=https://registry.npm.taobao.org
@@ -15,7 +15,7 @@ RUN apk add --no-cache tini
 WORKDIR /app/vendors
 EXPOSE 3000
 
-COPY --from=node:8-alpine /vendors /app/vendors
+COPY --from=baseNodeImage /vendors /app/vendors
 COPY ./entrypoint.sh /app/vendors/
 
 ENTRYPOINT [ "/sbin/tini", "--" ]

@@ -1,4 +1,4 @@
-
+﻿
 ## 官网
 
 https://yapi.ymfe.org
@@ -12,7 +12,7 @@ https://dev.aliyun.com/list.html?namePrefix=tandaly/yapi
 version: "2"
 services:
   mongo:
-    image: mongo:3.4
+    image: mongo:3
     container_name: mongo
     privileged: true
     restart: always

@@ -1,6 +1,6 @@
 FROM node:8-alpine AS baseNodeImage
 
-ARG TAG=v1.4.1
+ARG TAG=v1.4.4
 ARG REGISTRY=https://registry.npm.taobao.org
 
 RUN apk add --no-cache git python make \
